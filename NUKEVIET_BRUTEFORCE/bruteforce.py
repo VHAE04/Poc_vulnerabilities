@@ -5,7 +5,7 @@ import time
 count=0
 def start(count):
 	#---------------------VAR CAN CHANGE-----------------------------------------------
-	user='ngomaihuong'                                  #change user / default is admin
+	user='admin'                                  #change user / default is admin
 	timewait=0.3                                        #time delay post request
 	url = 'http://NUKEVIET.com/admin/'                  #url page login
 	#---------------------VAR CAN CHANGE-----------------------------------------------
@@ -27,7 +27,7 @@ def start(count):
 	y = pw_try_list.split()
 
 	
-
+	# :)) not thing code
 	print("WE NEED LOGIN WITH " + str(len(pw_raw.split()) - len(y)) +" PW")
 
 	
