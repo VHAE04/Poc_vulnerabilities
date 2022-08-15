@@ -5,16 +5,17 @@ import time
 count=0
 def start(count):
 	#---------------------VAR CAN CHANGE-----------------------------------------------
-	user='admin'                                  #change user / default is admin
+	user='admin'                                        #change user / default is admin
 	timewait=0.3                                        #time delay post request
 	url = 'http://NUKEVIET.com/admin/'                  #url page login
+	cookiesset="nv3c_Gdbap_sess"                        #cookie set will show in cookie when you connect to web login admin
 	#---------------------VAR CAN CHANGE-----------------------------------------------
 	
 	all_list_try=[]
 	headerss={
 	"Referer": url
 	}
-	cookies={"nv3c_Gdbap_sess":"VHAE_HACK"}
+	cookies={cookiesset:"VHAE_HACK"}
 	
 	
 	
