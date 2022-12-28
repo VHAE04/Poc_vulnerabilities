@@ -4,3 +4,5 @@ Lưu ý code dùng time-based nên khá lâu không ổn định nên hãy chạ
 
 ._. đây không phải là code tối ưu bạn có thể dùng dạng so sanh 7bit https://antoanthongtin.gov.vn/giai-phap-khac/toi-uu-hoa-tan-cong-blind-sql-injection-101512
 và đá qua dạng Boolean cùng với đa luồng thì sẽ nhanh hơn
+
+![image](https://user-images.githubusercontent.com/89138607/209743492-c946047e-785c-456b-a16f-b434a2af340d.png)
